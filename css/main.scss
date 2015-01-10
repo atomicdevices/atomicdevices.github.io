@@ -12,11 +12,14 @@ body {
 
 .navbar {
   min-height: 80px;
+  margin-bottom: 0;
 }
 
-.navbar-nav > li > a {
-  padding-top: 28px;
-  padding-bottom: 28px;
+@media(min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .navbar-toggle {
@@ -40,4 +43,63 @@ body {
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
+}
+
+.splash {
+  padding: 100px 0 125px;
+
+  background-color: #F5D76E;
+
+  h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 300;
+
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.about {
+  padding: 60px 0 100px;
+
+  h3 {
+    margin-bottom: 30px;
+    font-weight: 300;
+    padding: 20px;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer {
+  background-color: #ECECEC;
+  padding: 40px 0;
+
+  ul {
+    font-weight: 500;
+    font-size: 16px;
+    list-style-type: none;
+
+    li {
+      font-weight: 300;
+    }
+  }
+
+  .copyright {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  @media(min-width: 992px) {
+    .copyright {
+      text-align: right;
+    }
+  }
 }
